@@ -1,3 +1,5 @@
+/*
+
 console.log(document); 
 console.log(document.body);
 let listItems = document.getElementsByTagName('li');
@@ -10,3 +12,6 @@ console.log(titleText);
 let mainHeader = document.getElementById('main-header')
 console.log(mainHeader);
 mainHeader.style.color='lightblue'
+ */
+
+

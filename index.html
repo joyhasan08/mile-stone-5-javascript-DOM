@@ -8,6 +8,12 @@
         *{
             font-family: sans-serif;
         }
+        .font-color{
+            color: tomato;
+        }
+        .bg-gradient{
+            background: linear-gradient(90deg, rgba(255,230,0,1) 5%, rgba(144,103,2,1) 100%) !important ; 
+        }
     </style>
 </head>
 <body>
@@ -17,39 +23,87 @@
         </nav>
     </header>
     <main>
+
+                     <!-- 3 div colorful -->
+                     <section id="flex-section" style=" display: flex;">
+                        <div style="background-color: lightblue; padding: 10px;">
+                            <h2>What is CSS</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+                        </div>
+                        <div style="background-color: lightcoral; padding: 10px;">
+                            <h2>What is HTML</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+                        </div>
+                        <div style="background-color: lightcyan; padding: 10px;">
+                            <h2>What is javascript</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+                        </div>
+                    </section>
+
         <section style="background-color: rgb(211, 232, 253); padding: 10px;">
             <h1>Hello javascript</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam ullam enim magnam tempora delectus aspernatur facere, hic velit nostrum itaque rerum molestias. Architecto quod temporibus facere id, animi officia.</p>
 
-            <ul>
+            <ul id="ul-container">
                 <li class="title" style="color: #332a1e;">Lorem ipsum dolor sit amet consectetur.</li>
                 <li class="title" style="color: rgb(153, 127, 92);">Lorem ipsum dolor sit amet consectetur.</li>
                 <li class="title" style="color: rgb(94, 78, 53);">Lorem ipsum dolor sit amet consectetur.</li>
             </ul>
         </section>
+       
 
-        <section style="display: flex;">
-            <div style="background-color: lightblue; padding: 10px;">
-                <h2>What is CSS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
-            </div>
-            <div style="background-color: lightcoral; padding: 10px;">
-                <h2>What is HTML</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
-            </div>
-            <div style="background-color: lightcyan; padding: 10px;">
-                <h2>What is javascript</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+        <section>
+            <div>
+                <div style="text-align: center; padding: 25px; margin-bottom: 10px; ">
+                    <h1>Place to visit In React Tour</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, recusandae? Lorem <br> ipsum dolor sit amet consectetur adipisicing elit. Quidem enim repudiandae mollitia impedit <br> fuga incidunt unde libero, voluptas iste ratione velit harum voluptatem? Iste eum voluptatem</p>
+                </div>
+
+                <div style="width: fit-content; margin: 0% auto;">
+                    <img style="position: relative; top: 15px; width: 300px; height: fit-content;  border-radius: 10px;" src="https://images.unsplash.com/photo-1691573478405-25c5600feeaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=726&q=80" alt="">
+                    <img style="position: relative; bottom: 15px; width: 300px; height: fit-content;  border-radius: 10px;" src="https://images.unsplash.com/photo-1691676112160-53cddd988388?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="">
+                    <img style="position: relative; top: 15px; width: 300px; height: fit-content;  border-radius: 10px;" src="https://plus.unsplash.com/premium_photo-1675337267945-3b2fff5344a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="">
+                </div>
             </div>
         </section>
-        <script>
-            console.log('hello world')
-            document.getElementsByTagName('li')
-        </script>
+
+        <section style="border: solid rgb(255, 255, 255) 50px;">
+            <div style="border-radius: 10px; gap: 50px; background-color: rgb(183, 236, 183); display: flex; justify-content: center;   padding: 70px 0px; ">
+              <div>
+                <h1 style="text-align: center;">React Fundamental.</h1>
+                <img style="width: 520px; border-radius: 10px;" src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="">
+              </div>
+               <div style="margin-top: 50px;">
+                <h4 style="font-size: 20px;">Road Map of React</h4>
+                
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Sunt deserunt inventore iste!</li>
+                    <li>Delectus neque placeat ab!</li>
+                    <li>Suscipit veniam ducimus totam.</li>
+                    <li>Quas maiores aliquid quia?</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Delectus neque placeat ab!</li>
+                    <li>Suscipit veniam ducimus totam.</li>
+                    <li>Quas maiores aliquid quia?</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Sunt deserunt inventore iste!</li>
+                    <li>Delectus neque placeat ab!</li>
+                    <li>Suscipit veniam ducimus totam.</li>
+                    <li>Quas maiores aliquid quia?</li>
+                
+               </div>
+            </div>
+        </section>
+
+
+
+     
+
     </main>
 
 
 
     <script src="./index.js"></script>
+    <script src="./jsStyle.js"></script>
 </body>
 </html>
