@@ -4,27 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of Dom</title>
-    
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav style="background-color: rgb(131, 233, 233);">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+        <nav style="background-color: rgb(97, 153, 153); padding: 20px;">
+            <h1 id="main-header">HTML DOM Tour.</h1>
         </nav>
     </header>
     <main>
-        <section style="background-color: rgb(211, 232, 253);">
-            <h1>hello</h1>
+        <section style="background-color: rgb(211, 232, 253); padding: 10px;">
+            <h1>Hello javascript</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam ullam enim magnam tempora delectus aspernatur facere, hic velit nostrum itaque rerum molestias. Architecto quod temporibus facere id, animi officia.</p>
 
             <ul>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="title" style="color: #332a1e;">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="title" style="color: rgb(153, 127, 92);">Lorem ipsum dolor sit amet consectetur.</li>
+                <li class="title" style="color: rgb(94, 78, 53);">Lorem ipsum dolor sit amet consectetur.</li>
             </ul>
+        </section>
+
+        <section style="display: flex;">
+            <div style="background-color: lightblue; padding: 10px;">
+                <h2>What is CSS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+            </div>
+            <div style="background-color: lightcoral; padding: 10px;">
+                <h2>What is HTML</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+            </div>
+            <div style="background-color: lightcyan; padding: 10px;">
+                <h2>What is javascript</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque ipsum excepturi consectetur optio reiciendis quos cupiditate inventore officiis hic impedit dignissimos mollitia repudiandae, corrupti debitis labore sapiente ea similique.</p>
+            </div>
         </section>
         <script>
             console.log('hello world')
+            document.getElementsByTagName('li')
         </script>
     </main>
 
