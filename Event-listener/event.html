@@ -5,25 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        .section-two{
+            display: flex;
+            padding: 40px;
+            background: goldenrod;
+        }
     </style>
 </head>
 <body>
     <main>
         <section>
-            <h1>
+            <h1  id="header-one" style="border: solid salmon 2px ;">
                 What is Js Dom Event
             </h1>
+            <button onclick="document.body.style.backgroundColor= 'yellow'">
+                Change color
+            </button>
+            <button onclick="makeRed()">make red</button>
+            <button id="make-green" onclick="makeGreen()">make green</button>
             <p>Lorem ipsum dolor sit amet.</p>
-           <div>
-            <div>
-                <h2>In JavaScript click is the event</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, quisquam!</p>
-            </div>
-           </div>
+          
         </section>
+
+        <section class="section-two">
+            <div class="container">
+                
+                <div>
+                    <h2>In JavaScript click is the event</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, quisquam!</p>
+                </div>
+                    <button id="clickMe1">Click light blue  😉</button>
+            </div>
+            <div>
+                
+                <div>
+                    <h2>In JavaScript click is the event</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, quisquam!</p>
+                </div>
+                    <button>Click pink😉</button>
+            </div>
+
+        </section>
+        <footer style="text-align: center;">all right reseverd </footer>
     </main>
     <script>
+        //option 1 
+        function makeRed() {
+           let headerOne =document.getElementById('header-one');
+            headerOne.style.backgroundColor= 'red';
+        }
+
+        //option 1.2
+        function makeGreen() {
+            document.getElementById('header-one').style.backgroundColor='green';
+        }
+       //option 2
+        const clickMeButton =document.getElementById('clickMe1');
+        clickMeButton.onclick = makeBlure;
+
+        function makeBlure (params) { 
+            document.body.style.backgroundColor='lightBlue'
+              // document.getElementById('container').style.backgroundColor='lightBlue'
+
+        }
+
+        //option 3 add event listener  
 
     </script>
 </body>
