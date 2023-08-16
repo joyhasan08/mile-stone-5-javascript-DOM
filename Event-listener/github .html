@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git hub demo</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <section>
+        <h1 class="font-semibold text-4xl p-4 py-9 text bg-lime-700 text-yellow-300 text-center ">Simple Github Demo</h1>
+        <div id="comment-display" class="bg-lime-100 text-lg p-4 " >
+            
+            <p class=" min-h-[30%]  "><span class="text-3xl">Please inter your text here.</span> <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In aliquam neque totam ratione ipsam soluta, facilis sed, sint aut esse, ex sit illo quaerat debitis! Neque sapiente magnam placeat deleniti?</p>
+        </div>
+    </section>
+    <section class="space-y-6 py-5">
+       <div class="flex justify-center gap-5">
+        <textarea  name="" id="input-area" cols="50" rows="5" class="bg-slate-300  rounded-lg " ></textarea><br>
+        <textarea class="bg-slate-300  rounded-lg " name="" id="" cols="50" rows="5"></textarea>
+       </div>
+        <div class="flex justify-evenly ">
+            <button id="submit-btn" class="btn btn-success">submit</button>
+            <button id="delet-btn" class="btn btn-primary">Delete</button>
+        </div>
+    </section>
+    <script>
+            
+            //submit part
+            document.getElementById('submit-btn').addEventListener('click', function(){
+                const getComment =document.getElementById('input-area').value;
+                let pera = document.createElement('p');
+                pera.style.padding='4px 4px'
+                pera.innerText = getComment;
+                document.getElementById('comment-display').appendChild(pera);
+
+            })
+
+            // delete part
+            
+    </script>
+</body>
+</html>
