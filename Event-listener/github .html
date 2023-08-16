@@ -23,16 +23,16 @@
 <body>
     <section>
         <h1 class="font-semibold text-4xl p-4 py-9 text bg-lime-700 text-yellow-300 text-center ">Simple Github Demo</h1>
-        <div id="comment-display" class="bg-lime-100 text-lg p-4 " >
+        <div  id="comment-display" class="bg-lime-100 text-lg p-4 " >
             
-            <p class=" min-h-[30%]  "><span class="text-3xl">Please inter your text here.</span> <br>
+            <p id="text" class=" min-h-[30%]  "><span class="text-3xl">Please inter your text here.</span> <br>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. In aliquam neque totam ratione ipsam soluta, facilis sed, sint aut esse, ex sit illo quaerat debitis! Neque sapiente magnam placeat deleniti?</p>
         </div>
     </section>
     <section class="space-y-6 py-5">
        <div class="flex justify-center gap-5">
-        <textarea  name="" id="input-area" cols="50" rows="5" class="bg-slate-300  rounded-lg " ></textarea><br>
-        <textarea class="bg-slate-300  rounded-lg " name="" id="" cols="50" rows="5"></textarea>
+        <textarea placeholder="Submit Your Code Here //"  name="" id="input-area" cols="50" rows="5" class="bg-slate-300  rounded-lg p-2 " ></textarea><br>
+        <textarea class="bg-slate-300  rounded-lg p-2 " placeholder="type delete // for clear sreen" name=" " id="input-area-2" cols="50" rows="5"></textarea>
        </div>
         <div class="flex justify-evenly ">
             <button id="submit-btn" class="btn btn-success">submit</button>
@@ -46,13 +46,29 @@
                 const getComment =document.getElementById('input-area').value;
                 let pera = document.createElement('p');
                 pera.style.padding='4px 4px'
+                pera.style.margin='4px 4px'
+                pera.style.border='solid #334C10  2px'
+                pera.style.width='fit-content'
                 pera.innerText = getComment;
                 document.getElementById('comment-display').appendChild(pera);
+                document.getElementById('input-area').value= '';
+                console.log(pera);
+                document.getElementById('comment-display').style.display ='block';
+                
 
             })
 
             // delete part
-            
+
+            document.getElementById('delet-btn').addEventListener('click', function(){
+                console.log('click')
+                const dltComment= document.getElementById('input-area-2').value;
+                if(dltComment.toLowerCase()==='delete'){
+                    document.getElementById('text').style.display = 'none';
+                    document.getElementById('comment-display').style.display ='none';
+                }
+            })
+
     </script>
 </body>
 </html>
