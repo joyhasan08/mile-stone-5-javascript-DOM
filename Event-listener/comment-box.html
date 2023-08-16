@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment box</title>
+</head>
+<body>
+
+    <section>
+        <h1>ADD Your Comment</h1>
+        <img style="width: 500px; margin: 0% auto; " src="./Screenshot 2023-08-16 164316.png" alt="">
+    </section>
+
+    <section>
+        <div id="comment-container" style="display: grid; grid-template-columns: repeat(2,1fr); padding: 20px; background: lavenderblush; gap: 10px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis, illum necessitatibus labore similique inventore molestiae ipsam suscipit ipsa corrupti pariatur recusandae numquam eos culpa neque, modi voluptatum nemo rem.</p>
+            <p>Optio pariatur nulla aut harum quisquam odio, aliquid ipsa repellat officiis sapiente amet fuga tenetur maxime alias voluptas saepe quaerat at ea autem aliquam! Rem explicabo ipsum in unde corrupti.</p>
+            <p>Corporis asperiores tenetur soluta, nostrum ipsum maxime aliquid voluptatum fugiat consequatur quae officiis explicabo inventore impedit nisi voluptates delectus iure, rerum atque quaerat perspiciatis ipsa suscipit! Deleniti modi corporis rerum!</p>
+        </div>
+        <textarea name="" id="input" cols="50" rows="3"></textarea><br>
+        <button id="comment-btn" >Add Comment</button>
+    </section>
+    
+
+    <script>
+        document.getElementById('comment-btn').addEventListener('click',function () {
+            const inputComment = document.getElementById('input').value;
+
+            const commentContainer = document.getElementById('comment-container');
+            
+            const peragarph = document.createElement('p');
+            peragarph.innerText = inputComment;
+            commentContainer.appendChild(peragarph);
+            document.getElementById('input').value =''
+
+            // peragarph.style.backgroundColor='green';
+
+
+
+            
+        })
+    </script>
+</body>
+</html>

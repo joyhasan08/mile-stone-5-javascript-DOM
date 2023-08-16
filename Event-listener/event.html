@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <!-- style part -->
+    <style> 
         .section-two{
             display: flex;
             padding: 40px;
@@ -42,13 +43,37 @@
                     <h2>In JavaScript click is the event</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, quisquam!</p>
                 </div>
-                    <button>Click pink😉</button>
-            </div>
-
+                    <button id="clickMe2">Click pink😉</button>
+            </div> 
+            <button id="final-btn">final option </button>
+        </section>
+        <!-- input section -->
+        <section>
+            <h1 id="some-text">hello world is for baby</h1>
+            <h1 id="out-put-text" style=" padding: 15px; background: lightgray; width: fit-content;">Out-put Display</h1>
+            <input id="input-field"  type="text">
+            <button id="btn-change" >update</button>
+            <button onclick="onclickHandle()"  >click me now</button>
+            
+            
         </section>
         <footer style="text-align: center;">all right reseverd </footer>
     </main>
     <script>
+// input section
+       function  onclickHandle(){
+        document.getElementById('some-text').innerText='Dom is chaning '
+       }
+       
+       document.getElementById('btn-change').addEventListener('click', function(){
+         const text = document.getElementById('input-field').value;
+         
+         document.getElementById('out-put-text').innerText= text;
+         document.getElementById('input-field').value = '';
+         
+       })
+
+    //-------------------------------------------------------------------
         //option 1 
         function makeRed() {
            let headerOne =document.getElementById('header-one');
@@ -59,7 +84,7 @@
         function makeGreen() {
             document.getElementById('header-one').style.backgroundColor='green';
         }
-       //option 2
+       //option 2 onclik function 
         const clickMeButton =document.getElementById('clickMe1');
         clickMeButton.onclick = makeBlure;
 
@@ -71,6 +96,17 @@
 
         //option 3 add event listener  
 
+            const makePink = document.getElementById('clickMe2');
+            makePink.addEventListener('click' , makePinkFunction );
+
+            function makePinkFunction() {
+                document.body.style.backgroundColor='lightPink'
+            }
+        // final option
+            document.getElementById('final-btn').addEventListener('click', function () {
+                document.body.style.backgroundColor='lightGreen'
+            })
+      
     </script>
 </body>
 </html>
